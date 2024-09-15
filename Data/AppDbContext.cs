@@ -15,10 +15,10 @@ namespace DbOperations.Data {
             );
 
             modelBuilder.Entity<Language>().HasData(
-                new Currency() { Id = 1, Title = "English", Description = "English" },
-                new Currency() { Id = 2, Title = "Gujarati", Description = "Gujarati" },
-                new Currency() { Id = 3, Title = "Hindi", Description = "Hindi" },
-                new Currency() { Id = 4, Title = "German", Description = "German" }
+                new Language() { Id = 1, Title = "English", Description = "English" },
+                new Language() { Id = 2, Title = "Gujarati", Description = "Gujarati" },
+                new Language() { Id = 3, Title = "Hindi", Description = "Hindi" },
+                new Language() { Id = 4, Title = "German", Description = "German" }
             );
         }
 
@@ -26,7 +26,7 @@ namespace DbOperations.Data {
         public DbSet<Language> Languages{ get; set;}
         public DbSet<BookPrice> BookPrices{ get; set;}
         public DbSet<Currency> Currencies{ get; set;}
-
+        public DbSet<Author> Authors { get; set; }
 
     }
 }
